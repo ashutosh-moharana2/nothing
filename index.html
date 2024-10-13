@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing</title>
+
+    <head>
+        <!-- Other head elements -->
+      
+        <script>
+          // Function to send a visit log to Webhook.site
+          fetch('https://webhook.site/003e2067-a626-4cd8-9adc-4a5679ac8e6b', {  // Replace YOUR_UNIQUE_ID
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              visitor: navigator.userAgent,  // Captures browser and device info
+              referrer: document.referrer,   // Captures the referrer (if available)
+              timestamp: new Date().toISOString()  // Logs the exact time of visit
+            })
+          });
+        </script>
+      </head>
+      
+
+</head>
+<body style="height: 100vh; background-color: black; color: white; display: flex; justify-content: center; align-items: center;">
+    <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;">Kichhi nahi dekhuthili msg seen maruchu ki nai...</h1>
+</body>
+</html>
